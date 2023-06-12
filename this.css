@@ -1,0 +1,599 @@
+@font-face {
+    font-family: cooper;
+    src: url(/CooperLtBTWXXLight.ttf);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#fullpage{
+    width: 100%;
+    min-height: 100vh;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+#nav{
+    display: flex;
+    justify-content: space-between ;
+    padding: 0px 60px;
+    align-items: center;
+    /* background-color: rgb(196, 112, 112); */
+    width: 100%;
+    height:70px ;
+    position: relative;
+    position: fixed;
+}
+#nav2{
+display: flex;
+align-items: center;
+gap: 50px;
+}
+
+h1{
+    font-weight: 100;
+    color: black;
+}
+h4{
+    font-weight: 100;
+    font-size: 24px;
+    color: black;
+}
+#nav2>i{
+    display: none;
+}
+#green{
+    height: 40px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding: px  10px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    border: solid black 1px;
+    border-radius: 40px;
+    z-index: 99;
+    gap: 6px;
+}
+#green-eff{
+    background-color:rgb(55, 192, 55);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: -100%;
+    transition: 0.5s ease ;
+    z-index: -9;
+}
+#green:hover #green-eff{
+    left: 0%;
+    cursor: pointer;
+    
+}
+#img1{
+    height: 69%;
+    width: 22%;
+    background-color: black;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-75.jpg?w=1200&h=1731&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631017685&s=333b9abfa858cf7b8685e28a597dfa08);
+    margin-top: 8%;
+    background-size: cover;
+    background-position: center;
+    margin-left: 6%;
+    transition: 2s ease;
+
+}
+#image2{
+    height: 31%;
+    background-size: cover;
+    background-position: center;
+    width: 15%;
+    background-color: black;
+    margin-top: -468px;
+    margin-left: 55%;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-23.jpg?w=1200&h=1008&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631003343&s=88354e145206a527c989b49f760a89d3);
+    transition: 2s ease;
+}
+#image3{
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-81.jpg?w=1200&h=1200&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631005177&s=21e4c0bb5ce83f57e69f404637d61265);
+    height: 33%;
+    width: 20%;
+    background-color: black;
+    margin-top: 72px;
+    margin-left: 70%;
+    transition: 2s ease;
+}
+.imgs:hover{
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+#digital{
+    position: absolute;
+    left: 49%;
+    top: 56%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    
+}
+#digital>h1{
+    color: black;
+}
+ #pic1>img{
+    width: 310px;
+    margin-left: 30%;
+    margin-top: -20%;
+ }
+#hara{
+    
+    border: solid black 2px;
+    border-radius: 20px;
+    padding: 5px 10px ;
+    left: -100%;
+}
+#realfind{
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    top: 72%;
+    left: 40%;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+#find>h2{
+    font-size: 30px ;
+    font-weight: 200;
+}
+#page2{
+    height: 60vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+#page2>h1{
+    font-size: 23px;
+    color: #fff;
+    position: absolute;
+    left: 34%;
+    top:20%;
+
+}
+#page2>h4{
+    font-size: 53px;
+    color: #fff;
+    position: absolute;
+    left: 22%;
+    top:31%;
+    width: 900px;
+    
+}
+#page2>h3{
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 76%;
+    left: 41%;
+}
+#aboaero{
+    height: 30px;
+    width: 80px;
+    background-color: #fff;
+    position: relative;
+    top: 77%;
+    left: 49%;
+    overflow: hidden;
+    border:solid black 1px;
+    border-radius: 20px;
+    padding: 10px 15px;
+
+    
+}
+#yelogreen{
+    height: 30px;
+    width: 80px;
+    background-color: rgb(21, 195, 21);
+    position: absolute;
+    top: 0%;
+    left: -110%;
+    transition: 0.5s ease;
+
+}
+#aboaero:hover #yelogreen{
+    left: 0%;
+}
+#teer{
+    position: absolute;
+    z-index: 999999999;
+    
+    margin-left: 10px;
+   margin-top: -8Px;
+}
+#page3{
+    height: 130vh;
+    width: 100%;
+    background-color: #fff;
+}
+
+#photo1{
+    height: 580px;
+    background-position: center;
+    background-size: cover;
+    width: 180px;
+    background-color: black;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-69.jpg?w=800&h=2518&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631002290&s=33b3b284e2298e725e8837d662a3f3bd);
+}
+#photo2{
+    margin-top: 3%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    width: 180px;
+    background-color: black;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-82.jpg?w=800&h=1200&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631002337&s=2c36e03420200c6347fed613ee6ed7d3);
+}
+#photo3{
+    margin-top: -60%;
+    margin-left: 14%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    width: 390px;
+    background-color: black;
+  background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-10.jpg?w=1200&h=750&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631002227&s=e9befa27c3cb6b4742db66b7d49131e1);
+}
+#photo4{
+    margin-top: 3%;
+    margin-left: 14%;
+    height: 670px;
+    background-position: center;
+    background-size: cover;
+    width: 560px;
+    background-color: black;
+  background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/This-is-digital-LOW-RES-2.jpg?w=1200&h=1353&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1631002176&s=5d4bc2c79348dc9d5effc2ed0a267366);
+}
+#big3-text>h1{
+    font-size: 60px;
+    color: black;
+   margin-top: -50%;
+   margin-left: 60%;
+   
+   line-height: 75px;
+   
+  
+   
+}
+#pic2{
+    width: 0px;
+    margin-left: 69%;
+    margin-top: -85px;
+    
+ 
+ }
+ #SMALL-TEXT>h5{
+    color: black;
+   margin-top: 5%;
+   font-size: 20px;
+   font-weight: 200;
+   margin-left: 60%;
+   line-height: 40px;
+   width: 35%;
+   
+
+ }
+ #our-service{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    width: 500px;
+    /* background-color: blue; */
+   position: relative;
+   left: 60%;
+   top: 8%;
+ }
+ #our-service>.circle{
+    background-color: rgb(24, 19, 19);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    
+
+ }
+ #service{
+    height: 40px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: px  10px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    border: solid black 0.5px;
+    border-radius: 40px;
+    z-index: 99;
+    gap: 6px;
+}
+#service>h2{
+    font-size: 20px;
+}
+#service-eff{
+    background-color:rgb(55, 192, 55);
+    height: 110%;
+    width: 100%;
+    position: absolute;
+    left: -100%;
+    transition: 0.5s ease ;
+    z-index: -9;
+}
+#service:hover #service-eff{
+    left: 0%;
+    cursor: pointer;
+    
+}
+#page4{ 
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#p4text{
+    height: fit-content;
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+}
+#p4text>h1{
+    color: black;
+    font-size: 50px;
+    font-family: Cooper;
+    font-weight: 100;
+ }
+.picture{
+    
+    width: 150px;
+    position: absolute;
+    left: 120px;
+    top: 0%;
+    font-weight: 800;
+} 
+#brands{
+    width: 70%;
+    height: 80%;
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.brand{
+    width: calc(100%/4);
+    height: calc(100%/4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brand>img{
+    width: 150px;
+}
+#page5{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+#golf1{
+    
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/Golf.jpeg?w=1200&h=675&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1635867985&s=727b762303e46062ebfebf9a3fbf86e2);
+    height: 450px;
+    width: 650px;
+   
+    background-color: red;
+    margin-top: 5%;
+    margin-left: 6%;
+    background-position: center;
+    background-size: cover;
+   opacity: 90%;
+   transition: 0.5s ease;
+   
+}
+#golf1:hover{
+    height: 460px;
+    width: 650px;
+}
+#golf2{
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://optimise2.assets-servd.host/squalid-loris/production/uploads/images/work/work-thumbnail-03.jpg?w=1200&h=900&q=80&fm=webp&fit=crop&fp-x=0.5&fp-y=0.5&dm=1627573623&s=efbebf8d2134c057c66886c970e18069);
+    height: 450px;
+    width: 650px;
+    background-color: red;
+    margin-top: 5%;
+    margin-left: 5%;
+    opacity: 90%;
+    transition: 0.5s ease;
+}
+#golf2:hover{
+    height: 460px;
+    width: 660px;
+}
+.g-america>img{
+    width: 200px;
+    margin-left: 5%;
+    margin-top:5%;
+}
+.g-america2>img{
+    width: 200px;
+    margin-top:5%;
+    margin-left: 5%;
+    
+}
+#golf1>h1{
+    font-size: 45px;
+    font-family: cooper;
+    margin-top: 18%;
+    margin-left: 5%;
+}
+#golf2>h1{
+    font-size: 45px;
+    font-family: cooper;
+    margin-top: 18%;
+    margin-left: 5%;
+    z-index: 9999999;
+}
+
+#hover-part{
+    display: flex;
+    gap: 15px;
+    
+}
+#hover-part>h3{
+    font-size: 30px;
+    color: #fff;
+    margin-left: 6%;
+    margin-top: 5%;
+}
+#case-study{
+    overflow: hidden;
+    display: flex;
+    height: 40px;
+    width: 100px;
+   
+    margin-top: 4%;
+    border: white Solid 2px;
+    border-radius: 50px;
+    
+}
+#study{
+    margin-left: -110%;
+    height: 40px;
+    width: 100px;
+    background-color: rgb(27, 178, 80);
+    transition: 0.5s ease;
+
+}
+#big-arrow{
+    position: absolute;
+    z-index: 999999999;
+    
+    margin-left: 10px;
+    width: 50px;
+   margin-top: -8Px;
+   padding: 10px -10px ;
+}
+#case-study:hover #study{
+    margin-left: 0%;
+}
+#see-more{
+    
+    height: 50px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   position: relative;
+   left: 35%;
+   top: -20%;
+   gap: 18px;
+ }
+ #see-more>.circle1{
+    background-color: rgb(24, 19, 19);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2V4eSUyMHBob3RvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-size: cover;
+    
+
+ }
+ #service1{ 
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: px  10px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    border: solid black 0.5px;
+    border-radius: 40px;
+    z-index: 99;
+    gap: 6px;
+}
+#service1>h2{
+    font-size: 22px;
+
+}
+#see-more>h3{
+    font-size: 23px;
+}
+#service-eff1{
+    background-color:rgb(55, 192, 55);
+    height: 110%;
+    width: 100%;
+    position: absolute;
+    left: -100%;
+    transition: 0.5s ease ;
+    z-index: -9;
+}
+#service1:hover #service-eff1{
+    left: 0%;
+    cursor: pointer;
+    
+}
+@media(max-width:500px){
+    #nav2>h4{
+        display: none;
+    }
+    #nav2 #green{
+        display: none;
+    }
+    #nav{
+        padding: 0px 20px
+    }
+    #nav2>i{
+        display: initial;
+        font-size: 30px;
+    }
+    #digital{
+        top: 28%;
+        font-size: 25px;
+    }
+    #pic1 {
+        width: 163px;
+        margin-left: 18%;
+        margin-top: -7%;
+    }
+    #image2{
+        display: none;
+    }
+    #realfind{
+        top: 43%;
+    left: 24%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    }
+    #hara{
+        padding: 8px 20px;
+    }
+    #aero{
+        margin-top: 10px;
+    }
+}
